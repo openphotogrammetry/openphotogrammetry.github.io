@@ -40,7 +40,9 @@
     
     let path = './assets/splats/ignatius-cropped.ply';
 
-    viewer.loadFile(path)
+    viewer.addSplatScene(path), {
+      'streamView': true
+    })
     .then(() => {
         viewer.start();
     });
