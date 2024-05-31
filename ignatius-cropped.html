@@ -38,9 +38,10 @@
         'initialCameraLookAt': [0.60910, 1.42099, 2.02511]
     });
     
-    let path = './assets/splats/ignatius-cropped.ply';
+    let path = './assets/splats/ignatius-cropped.ksplat';
 
     viewer.addSplatScene(path, {
+      'streamView': true
     })
     .then(() => {
         viewer.start();
