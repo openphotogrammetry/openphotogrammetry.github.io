@@ -514,10 +514,14 @@
         </div>
       </div>
       <div style="padding-left: 20px; padding-right: 20px;">
-        These 3D scenes are represented with gaussian splatting. This online viewer is adapted from <a href="https://github.com/mkkellogg/GaussianSplats3D <view-source:https://github.com/mkkellogg/GaussianSplats3D>">GaussianSplats3D</a>. Thank you to the author for sharing his work.
+        These 3D models were created from short video clips using our photogrammetry pipeline. The 3D scenes here are rendered using 3D gaussian splatting. The online viewer is adapted from <a href="https://github.com/mkkellogg/GaussianSplats3D <view-source:https://github.com/mkkellogg/GaussianSplats3D>">GaussianSplats3D</a> (thanks to the author for sharing his work!).
         <br><br>
-        The 3D scenes are stored in a format similar to point clouds and can be viewed, navigated, and interacted with in real-time. 
-        The viewer performs best with the Chrome or Firefox browsers.
+        Click on each 3D scene in the gallery to interactively view them. The viewer uses the following mouse inputs:
+        <ul>
+           <li style="margin-bottom:3px;">Left click to set the focal point</li>
+           <li style="margin-bottom:3px;">Left click and drag to orbit</li>
+           <li style="margin-bottom:3px;">Right click and drag to pan</li>
+         </ul>
       </div>
       <br>
     </div>
@@ -549,64 +553,6 @@
         </div>
     </div>
     <br>
-    <div class="header-content-container">
-        <div class="content-row">
-      
-            <div id ="controls-panel" class="splat-panel" style="height:360px;">
-
-                <br>
-                <span class="small-title">Mouse input</span>
-                <div style="text-align: left;">
-                    <ul>
-                        <li style="margin-bottom:3px;">Left click to set the focal point</li>
-                        <li style="margin-bottom:3px;">Left click and drag to orbit</li>
-                        <li style="margin-bottom:3px;">Right click and drag to pan</li>
-                    </ul>
-                </div>
-                <span class="small-title">Keyboard input</span>
-                <div style="height: 10px"></div>
-                <table>
-                    <tr>
-                        <td><div class ="controls-key">I</div></td>
-                        <td class="controls-key-description">Display debug info panel</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="height:1px">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><div class ="controls-key">C</div></td>
-                        <td class="controls-key-description">Toggle mesh cursor</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="height:1px">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><div class ="controls-key">P</div></td>
-                        <td class="controls-key-description">Toggle controls orientation marker</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="height:1px">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><div class ="controls-key" style="font-size:13pt; font-weight: bold;">&larr;</div></td>
-                        <td class="controls-key-description">Rotate camera-up counter-clockwise</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="height:1px">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><div class ="controls-key" style="font-size:13pt; font-weight: bold;">&rarr;</div></td>
-                        <td class="controls-key-description">Rotate camera-up clockwise</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-  </div>
 </body>
 
 <script>
